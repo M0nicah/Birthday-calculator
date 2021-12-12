@@ -31,22 +31,23 @@
       </div>
     </section>
     <!--FORM BEGINS HERE-->
-    <div class="flex items-center justify-center mx auto mt-16">
-        <div class="flex items-center justify-center mx-auto">
-          <label class="block">
+    <form class="flex mx auto mt-16">
+        <div class="flex items-center mx-auto">
+          <label  class="block">
           <span class="text-white font-sans font-bold text-lg">Date of birth:</span>
           <input type="date" class="text-gray-700 p-5 shadow-lg rounded-xl ml-5" placeholder="Enter D.O.B">
-          <input type="submit" id="button" class="p-3 shadow-lg rounded-xl ml-7 w-24 font-bold">
+          
           </label class="block">
           <label><span class="text-white font-sans font-bold text-lg ml-8 ">Choose Gender:</span>
-            <select id="select">
-                <option value="select">Select</option>
-                <option  value="female">Female</option>
+            <select id="select" class="w-36 p-5 rounded-lg shadow ml-6">
+                <option value="select" >Select</option>
+                <option value="female">Female</option>
                 <option value="male">Male</option>
             </select>
               
           </label>
+          <input type="submit" id="button" value="Submit" class="p-3 shadow-lg rounded-xl ml-7 w-24 font-bold">
         </div>
-    </div>
+    </form>
   </body>
 </html>
