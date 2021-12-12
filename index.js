@@ -27,11 +27,25 @@ document.getElementById("button").addEventListener(onclick, () => {
   const month = dateParts[1];
   const day = dateParts[2];
   const gender = document.getElementById("select").value;
-
+  //checking valid and invalid dates. (input from the forms)
   if (day <= 0 || day > 31) alert("Day is invalid! Please enter a valid one.");
   else if (month <= 0 || month > 12)
     alert("Month is invalid! Please enter a valid one.");
   else {
-      
+     const cc = year.substring(0,2);
+     const yy = year.substring(2, 4);
+     const mm = month;
+     const dd = day;
+     const mod = %
+     //calculation the day of the week
+    function myFunction(( ( (cc/4) -2*cc-1), + ((5*yy/4) ), + ((26*(mm+1)/10)), + dd ) mod 7;) {
+
+        console.log("myFunction"(2001-18-7));
+       
+     } 
+
+     
+
+
   }
 });
