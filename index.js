@@ -53,5 +53,14 @@ document.getElementById("btn").addEventListener("click", () => {
     const d = Math.floor(
       (cc / 4 - 2 * cc - 1 + (5 * yy) / 4 + (26 * (mm + 1)) / 10 + dd) % 7
     );
+    if (gender == "female") {
+      document.getElementById("output").innerHTML = `You were born on ${
+        daysOfTheWeek[d - 1]
+      }, your Akan name is ${femaleAkanNames[d - 1]}`;
+    } else {
+      document.getElementById("output").innerHTML = `You were born on ${
+        daysOfTheWeek[d - 1]
+      }, your Akan name is ${maleAkanNames[d - 1]}!`;
+    }
   }
 });
