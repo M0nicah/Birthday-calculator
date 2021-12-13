@@ -45,10 +45,10 @@ document.getElementById("btn").addEventListener("click", () => {
   else if (gender == "")
     alert("Gender is invalid! Please enter a valid gender");
   else {
-    const cc = parseInt(year.substring(0, 2));
-    const yy = parseInt(year.substring(2, 4));
-    const mm = parseInt(month);
-    const dd = parseInt(day);
+    const cc = +(year.substring(0, 2));
+    const yy = +(year.substring(2, 4));
+    const mm = +month;
+    const dd = +day;
     // calculation of the day of the week
     const d = Math.floor(
       (cc / 4 - 2 * cc - 1 + (5 * yy) / 4 + (26 * (mm + 1)) / 10 + dd) % 7
