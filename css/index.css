@@ -7,6 +7,10 @@ body{
     color: #330033;
 }
 
-#button{
+#btn{
     background-color: #eab308;
+}
+#output{
+    background-color: #330033;
+    
 }

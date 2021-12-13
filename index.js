@@ -1,3 +1,13 @@
+//Days
+const daysOfTheWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 //Male akan names
 const maleAkanNames = [
   "Kwasi",
@@ -20,32 +30,28 @@ const femaleAkanNames = [
 ];
 
 // submit button click event listener-
-document.getElementById("button").addEventListener(onclick, () => {
+document.getElementById("btn").addEventListener("click", () => {
   const date = document.getElementById("date").value;
   const dateParts = date.split("-");
   const year = dateParts[0];
   const month = dateParts[1];
   const day = dateParts[2];
   const gender = document.getElementById("select").value;
+  console.log(gender);
   //checking valid and invalid dates. (input from the forms)
   if (day <= 0 || day > 31) alert("Day is invalid! Please enter a valid one.");
   else if (month <= 0 || month > 12)
     alert("Month is invalid! Please enter a valid one.");
+  else if (gender == "")
+    alert("Gender is invalid! Please enter a valid gender");
   else {
-     const cc = year.substring(0,2);
-     const yy = year.substring(2, 4);
-     const mm = month;
-     const dd = day;
-     const mod = %
-     //calculation the day of the week
-    function myFunction(( ( (cc/4) -2*cc-1), + ((5*yy/4) ), + ((26*(mm+1)/10)), + dd ) mod 7;) {
-
-        console.log("myFunction"(2001-18-7));
-       
-     } 
-
-     
-
-
+    const cc = parseInt(year.substring(0, 2));
+    const yy = parseInt(year.substring(2, 4));
+    const mm = parseInt(month);
+    const dd = parseInt(day);
+    // calculation of the day of the week
+    const d = Math.floor(
+      (cc / 4 - 2 * cc - 1 + (5 * yy) / 4 + (26 * (mm + 1)) / 10 + dd) % 7
+    );
   }
 });
