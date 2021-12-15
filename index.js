@@ -55,12 +55,12 @@ document.getElementById("btn").addEventListener("click", () => {
     );
     if (gender == "female") {
       document.getElementById("output").innerHTML = `You were born on ${
-        daysOfTheWeek[d - 1]
-      }, your Akan name is ${femaleAkanNames[d - 1]}`;
+        daysOfTheWeek[d]
+      }, your Akan name is ${femaleAkanNames[d]}`;
     } else {
       document.getElementById("output").innerHTML = `You were born on ${
-        daysOfTheWeek[d - 1]
-      }, your Akan name is ${maleAkanNames[d - 1]}!`;
+        daysOfTheWeek[d]
+      }, your Akan name is ${maleAkanNames[d]}!`;
     }
   }
 });
